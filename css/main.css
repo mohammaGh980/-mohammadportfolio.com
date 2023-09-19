@@ -1,0 +1,48 @@
+h1{
+    color:black
+}
+img{
+    width: 500px;
+}
+
+.subjectContainer{
+    display: grid;
+    grid-template-columns:auto auto auto;
+}
+.subbjectBox{
+    border: 2px solid red;
+}
+
+
+
+
+#midelbox{
+border:2px solid black
+}
+.button{
+    background-color: blue;
+    width: 100px;
+    padding: 20px;
+    border: radius 10px;
+    text-align:picture-in-picture
+}
+.topnav{
+    overflow: hidden;
+    background-color:rgb(255, 132, 0);
+}
+.topnav{
+    float: left;
+    color: red;
+    text-align: center;
+    padding: 18px;
+    text-decoration: none;
+    font-size: 17px
+}
+.topnav a:hover{
+background-color: blue;
+color:black;
+}
+.topnav a.active{
+    background-color: aqua;
+    color: whitesmoke;
+}
