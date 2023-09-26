@@ -28,21 +28,22 @@ border:2px solid black
 }
 .topnav{
     overflow: hidden;
-    background-color:rgb(255, 132, 0);
+    background-color:rgb(255, 33, 4);
 }
-.topnav{
-    float: left;
-    color: red;
-    text-align: center;
-    padding: 18px;
+.topnav a{
+   
+    color: rgb(0, 0, 0);
+    text-align: left;
+    padding: 100px;
     text-decoration: none;
-    font-size: 17px
+    font-size: 30px
 }
 .topnav a:hover{
-background-color: blue;
+background-color: rgb(248, 248, 248);
 color:black;
 }
 .topnav a.active{
     background-color: aqua;
     color: whitesmoke;
 }
+
