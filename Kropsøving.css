@@ -18,3 +18,11 @@
         background-color: aqua;
         color: whitesmoke;
     }
+    .info{
+        padding-left: 20px;
+        font-size: 20px;
+    }
+    .container{
+        padding-right: 50px;
+    
+    }

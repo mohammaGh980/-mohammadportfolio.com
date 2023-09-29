@@ -1,6 +1,6 @@
 .topnav{
     overflow: hidden;
-    background-color: red;
+    background-color: rgb(255, 102, 0);
 }
 .topnav a{
    
@@ -17,4 +17,8 @@
     .topnav a.active{
         background-color: aqua;
         color: whitesmoke;
+    }
+    .info{
+        padding-left: 20px;
+        font-size: 25px;
     }
