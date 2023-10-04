@@ -2,23 +2,10 @@ h1{
     color:black
 }
 img{
-    width: 500px;
-}
-
-.subjectContainer{
-    display: grid;
-    grid-template-columns:auto auto auto;
-}
-.subbjectBox{
-    border: 2px solid rgb(241, 4, 4);
+    width: 600px;
 }
 
 
-
-
-#midelbox{
-border:2px solid black
-}
 .button{
     background-color: blue;
     width: 100px;
@@ -36,7 +23,7 @@ border:2px solid black
     text-align: left;
     padding: 100px;
     text-decoration: none;
-    font-size: 30px
+    font-size: 45px
 }
 .topnav a:hover{
 background-color: rgb(246, 138, 5);
@@ -46,4 +33,19 @@ color:black;
     background-color: aqua;
     color: whitesmoke;
 }
-
+body {
+    background-color: rgb(241, 172, 11);/* orange bakground for my Hom (heim)wep*/
+    background-size: cover;
+}
+.container{
+    display: grid;
+    grid-template-columns:50% 50%;
+    padding: 20px;
+    border:10px solid rgb(255, 81, 0)
+}
+.funtype{
+    padding-left: 30px;
+    font-size: 30px;
+}
+ 
+    

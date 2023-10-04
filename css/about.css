@@ -5,5 +5,14 @@
 }
 .info {
     padding-left: 30px;
-    font-size: 35px;
+    font-size: 52px;
+}
+body{
+    background-color: rgb(255, 196, 0);
+}
+   
+
+img{
+    width: 100%;
+    height: auto;
 }
