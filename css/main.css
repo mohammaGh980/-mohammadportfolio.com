@@ -16,14 +16,15 @@ img{
 .topnav{
     overflow: hidden;
     background-color:rgb(255, 96, 4);
+    padding: 20px;
 }
 .topnav a{
    
     color: rgb(0, 0, 0);
     text-align: left;
-    padding: 100px;
+    padding: 50px;
     text-decoration: none;
-    font-size: 45px
+    font-size:25px
 }
 .topnav a:hover{
 background-color: rgb(246, 138, 5);
