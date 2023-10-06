@@ -1,3 +1,8 @@
-body {
+body {/*her er skrifttype til contakt meg*/
     font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: rgb(255, 200, 0);
+    block-size: cover;
 }

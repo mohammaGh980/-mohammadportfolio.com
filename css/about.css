@@ -1,21 +1,44 @@
-.container{
+.container {
     display: grid;
-    grid-template-columns:50% 50%;
+    grid-template-columns: 50% 50%;
     padding: 20px;
 }
+
 .info {
     padding-left: 30px;
     font-size: 25px;
 }
-body{
+
+body {
     background-color: rgb(241, 172, 11);
 }
-   
 
-img{
+
+img {
     width: 100%;
     height: auto;
 }
-body{
+
+body {
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: rgb(255, 81, 0);
+    padding: 20px;
+}
+
+.topnav a {
+
+    color: rgb(0, 0, 0);
+    text-align: left;
+    padding: 20px;
+    text-decoration: none;
+    font-size: 25px
+}
+
+.topnav a:hover {
+    background-color: rgb(248, 248, 248);
+    color: black;
 }

@@ -6,9 +6,9 @@
 }
 
 .vertical-menu a {
-   /* orange background color */
-  background-color:rgb(255, 81, 0);
- /* Black text color */
+  /* orange background color */
+  background-color: rgb(255, 81, 0);
+  /* Black text color */
   color: rgb(10, 10, 10);
   display: block;
   padding: 60px;
@@ -17,11 +17,11 @@
 
 .vertical-menu a:hover {
   background-color: #fbf8f6;
-  /* Mørk oransje bakgrunn på musen over */
+  /* kvit bakgrunn på musen over */
 }
 
 .vertical-menu a.active {
-  background-color:rgb(255, 81, 0);
+  background-color: rgb(255, 81, 0);
   /*  */
   color: rgb(0, 0, 0);
   padding: 50px;
@@ -33,11 +33,12 @@
   padding: 20px;
 }
 
+
 .topnav a {
 
   color: rgb(0, 0, 0);
   text-align: left;
-  padding: 50px;
+  padding: 20;
   text-decoration: none;
   font-size: 25px
 }

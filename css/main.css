@@ -6,9 +6,7 @@ img {
     width: 600px;
 }
 
-
 .button {
-    background-color: blue;
     width: 100px;
     padding: 20px;
     border: radius 10px;
@@ -17,26 +15,26 @@ img {
 
 .topnav {
     overflow: hidden;
-    background-color:rgb(255, 81, 0);
+    background-color: rgb(255, 81, 0);
     padding: 20px;
 }
 
-.topnav a {
-
+.topnav a,
+.dropdown {
+    float: left;
     color: rgb(0, 0, 0);
     text-align: left;
-    padding: 50px;
+    padding: 20px;
     text-decoration: none;
     font-size: 25px
 }
 
 .topnav a:hover {
-    background-color:rgb(255, 81, 0);
+    background-color: rgb(255, 81, 0);
     color: black;
 }
 
 .topnav a.active {
-    background-color: aqua;
     color: whitesmoke;
 }
 
@@ -45,6 +43,7 @@ body {
     /* orange bakground for my Hom (heim)wep*/
     background-size: cover;
 }
+
 .container {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -59,4 +58,77 @@ body {
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.dropbtnact {
+    background-color: rgb(255, 81, 0);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: rgb(255, 81, 0);
+}
+
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown a.active {
+    background-color: yellow;
+    color: rgb(255, 81, 0);
+    border: solid black;
+}
+
+
+
+.dropdown .dropbtn {
+    font-size: inherit;
+    border: none;
+    outline: none;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+
+
+.dropdown:hover .dropbtn {
+    color: white;
+}
+
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    background-color: rgb(255, 81, 0);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    float: none;
+    text-align: left;
+}
+
+/* For dropdown content*/
+.dropdown-content a:hover {
+    background-color: lightblue;
+}
+
+/* For hovering on dropdown content*/
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.topnav a:hover {
+    background-color: rgb(248, 248, 248);
+    color: black;
 }
