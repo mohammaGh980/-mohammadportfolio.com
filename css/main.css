@@ -1,52 +1,62 @@
-h1{
-    color:black
+h1 {
+    color: black
 }
-img{
+
+img {
     width: 600px;
 }
 
 
-.button{
+.button {
     background-color: blue;
     width: 100px;
     padding: 20px;
     border: radius 10px;
-    text-align:picture-in-picture
+    text-align: picture-in-picture
 }
-.topnav{
+
+.topnav {
     overflow: hidden;
-    background-color:rgb(255, 96, 4);
+    background-color:rgb(255, 81, 0);
     padding: 20px;
 }
-.topnav a{
-   
+
+.topnav a {
+
     color: rgb(0, 0, 0);
     text-align: left;
     padding: 50px;
     text-decoration: none;
-    font-size:25px
+    font-size: 25px
 }
-.topnav a:hover{
-background-color: rgb(246, 138, 5);
-color:black;
+
+.topnav a:hover {
+    background-color:rgb(255, 81, 0);
+    color: black;
 }
-.topnav a.active{
+
+.topnav a.active {
     background-color: aqua;
     color: whitesmoke;
 }
+
 body {
-    background-color: rgb(241, 172, 11);/* orange bakground for my Hom (heim)wep*/
+    background-color: rgb(241, 172, 11);
+    /* orange bakground for my Hom (heim)wep*/
     background-size: cover;
 }
-.container{
+.container {
     display: grid;
-    grid-template-columns:50% 50%;
+    grid-template-columns: 50% 50%;
     padding: 20px;
-    border:10px solid rgb(255, 81, 0)
+    border: 10px solid rgb(255, 81, 0)
 }
-.funtype{
+
+.funtype {
     padding-left: 30px;
     font-size: 30px;
 }
- 
-    
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
