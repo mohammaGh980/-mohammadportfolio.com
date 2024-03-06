@@ -278,4 +278,13 @@ div.desc {
   display: table;
   clear: both;
 }
+.containerimg{
+  display: flex;
+justify-content: space-around;
+max-width: 100%;
+height: auto;
+padding: 20px;
+flex-wrap: wrap;
+align-items: baseline;
+}
 
