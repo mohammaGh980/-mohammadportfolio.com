@@ -4,6 +4,17 @@ body {
     background-size: cover;
 }
 
+.logo-link {
+    display: inline-block; /* Sørg for at lenken og bildet holder seg på samme linje */
+}
+
+.logo {
+    width: 60px; /* Endre størrelsen etter behov */
+    height: 60px; /* Sørg for at høyden er det samme som bredden for å få en sirkel */
+    border-radius: 50%; /* Setter border-radius til 50% for å lage en sirkel */
+    margin-top: 0px; /* Juster marginen etter behov for å passe inn i toppnavigasjonsfeltet */
+}
+
 img {
     width: 600px;
 }
@@ -32,7 +43,13 @@ img {
 }
 
 .topnav a.active {
-    color: #040404;
+    color: #f1f1f1;
+    margin-top: 10px;
+}
+
+.topnav button.dropbtn {
+    color: #f1f1f1;
+    margin-top: 10px;
 }
 .container {
     display: grid;
@@ -131,7 +148,7 @@ body {
     padding: 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #140505;
+    color: #f5e8e8;
     display: block;
   }
   
@@ -160,7 +177,7 @@ body {
     float: left;
     padding: 10px;
     margin-top: 15px;
-    margin-left: 700px;
+    margin-left: 1236px;
     border: none;
     font-size: 16px;
     width: 200px; /* Juster bredden etter behov */
@@ -175,8 +192,8 @@ body {
 
 #searchResult {
     position: absolute;
-    width: 200px; /* Juster bredden etter behov */
-    right: 115px;
+    width: 220px; /* Juster bredden etter behov */
+    right: 68px;
     top: 70px; /* Juster toppmargin etter behov */
     background-color: rgb(255, 81, 0);
     border: 1px solid #ffffff;
@@ -189,7 +206,7 @@ body {
     display: block;
     padding: 10px;
     text-decoration: none;
-    color: #0c0c0c;
+    color: #e6dfdf;
     transition: background-color 0.3s;
 }
 

@@ -23,6 +23,20 @@
 .topnav a.active {
     color: #040404;
 }
+.topnav a:hover {
+  background-color: rgb(255, 81, 0);
+  color: rgb(255, 255, 255);
+}
+
+.topnav a.active {
+  color: #f1f1f1;
+  margin-top: 10px;
+}
+
+.topnav button.dropbtn {
+  color: #f1f1f1;
+  margin-top: 10px;
+}
 .dropbtn{
     background-color: rgb(255, 81, 0);
 }
@@ -190,6 +204,6 @@ body {
     padding-left: 20px;
     padding-right:20px;
   }
-  #p{
+  p{
     size: 90px;
   }
