@@ -1,13 +1,12 @@
 body {
-    background-image: url('../images/home-bg.dc52d5d4.jpg');
+   background-color: #450262;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 120vh;
     color: rgb#8c19b9; /* Sett teksten til hvit farge for kontrast mot bakgrunnsbildet */
     font-family: Arial, sans-serif; /* Velg en passende font */
-    margin: 10;
-    
+    margin: 10;  
 }
 #navn {
     position: absolute;
@@ -24,7 +23,7 @@ body {
     color: rgb(230, 12, 139); /* Andre farge for navnet ditt */
 }
 
-.container {
+.name{
     display: flex;
     justify-content: center; /* Plasserer innholdet i midten horisontalt */
     align-items: flex-start; /* Plasserer innholdet øverst vertikalt */
@@ -48,13 +47,13 @@ body {
   .h1{
     position: absolute;
     top: 200px; /* Avstand fra toppen av vinduet */
-    left: 450px; /* Avstand fra venstre kant av vinduet */
+    left: 225px; /* Avstand fra venstre kant av vinduet */
     font-size: 40px;
 }
 .h2{
     position: absolute;
     top: 250px; /* Avstand fra toppen av vinduet */
-    left: 390px; /* Avstand fra venstre kant av vinduet */
+    left: 170px; /* Avstand fra venstre kant av vinduet */
     font-size: 40px;
 }
 .farge3 {
@@ -74,8 +73,8 @@ body {
     font-size: 40px;
     text-align: center;
     margin-bottom: 20px;
-    margin-top: 25vh; /* Endre denne verdien for å justere avstanden fra bunnen */
-    margin-right: 70vh;
+    margin-top: 40vh; /* Endre denne verdien for å justere avstanden fra bunnen */
+    margin-right: 130vh;
     transform: translateY(-50%); /* Juster for å sentrere vertikalt */
     color: rgb(190, 80, 244);
 }
@@ -92,7 +91,7 @@ body {
     z-index: 1;
     top: 0;
     right: 0;
-    background-color: #361942;
+    background-color: #7d27a2;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -122,7 +121,7 @@ body {
     font-size: 30px;
     cursor: pointer;
     color: rgb(248, 241, 245);
-    background-color: #533c5c;
+    background-color: #450262;
     border: none;
     margin-right: 9px;
     margin: 10px;
@@ -130,3 +129,26 @@ body {
   .img-sidebar{
     font-size: 10px;
   }
+
+  /* digital klokke */
+  #clock {
+    font-size: 20px;
+    color: rgb(230, 12, 139);
+    position: absolute;
+    top: 24px;
+    right: 50px;
+}
+#clock-container {
+  position: absolute;
+  top: 24px;
+  right: 10px;
+  padding: 10px;
+  border: 2px solid rgb(19, 12, 230);
+  background-color: rgba(230, 12, 139, 0.1); /* Bakgrunnsfarge med litt gjennomsiktighet */
+  border-radius: 5px; /* Gjør hjørnene avrundet */
+}
+#clock {
+  font-size: 18px;
+  color: rgb(230, 12, 139);
+}
+
