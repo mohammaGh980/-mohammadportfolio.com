@@ -73,17 +73,39 @@ body {
     font-size: 40px;
     text-align: center;
     margin-bottom: 20px;
-    margin-top: 40vh; /* Endre denne verdien for å justere avstanden fra bunnen */
-    margin-right: 130vh;
-    transform: translateY(-50%); /* Juster for å sentrere vertikalt */
+    position: absolute;
+    top: 340px; /* Avstand fra toppen av vinduet */
+    left: 105px; /* Avstand fra venstre kant av vinduet */
+    font-size: 40px;
     color: rgb(190, 80, 244);
 }
-.img{
-    position: absolute;
-    top: 150px; /* Avstand fra toppen av vinduet */
-    right:0px; /* Avstand fra venstre kant av vinduet */
-    font-size: 10px;
+div.gallery2 {
+  border: 5px solid rgb(230, 12, 139);
+  top: 60px; /* Juster for å sentrere bildet vertikalt */
+  left: 280px;  /* Juster for å sentrere bildet horisontalt */
 }
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+.responsive2 {
+  display: flex;
+  justify-content: center;
+}
+.gallery2 {
+  width: 630px; /* Sett ønsket bredde */
+  height: 490px; /* Sett ønsket høyde */
+  overflow: hidden;
+  position: relative;
+}
+.gallery2 img {
+  width: 100%;
+  height: auto; /* Bevar bildets proporsjoner */
+  position: absolute; /* Gjør at vi kan posisjonere bildet innenfor containeren */
+  top: -353px;px; /* Juster for å sentrere bildet vertikalt */
+  right: 0px; /* Juster for å sentrere bildet horisontalt */
+}
+
 .sidebar {
     height: 100%;
     width: 0;
@@ -148,7 +170,19 @@ body {
   border-radius: 5px; /* Gjør hjørnene avrundet */
 }
 #clock {
-  font-size: 18px;
+  font-size: 28px;
   color: rgb(230, 12, 139);
+  font-family:serif;
+}
+a {
+    text-decoration: none;
+    color: inherit; /* Behold fargen fra foreldreelementet (h1) */
+}
+
+#contact-section {
+  background-color: rgb(230, 12, 139); /* Annerledes farge for kontaktseksjonen */
+  padding: 20px; /* Tilpass padding etter behov */
+  color: #fff9f9; /* Tekstfarge for kontrast */
+  margin-top: 400px;
 }
 
