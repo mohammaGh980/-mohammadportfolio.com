@@ -58,18 +58,7 @@ div.desc {
 .responsive {
   padding: 20px;
   float: left;
-  width: 32%;
+  width: 30%;
+  height: 70%;
 }
 
-@media only screen and (max-width: 700px) {
-  .responsive {
-    width: 49.99999%;
-    margin: 6px 0;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  .responsive {
-    width: 100%;
-  }
-}
