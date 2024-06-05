@@ -78,5 +78,7 @@
     text-align: center; /* Sentrerer teksten horisontalt */
     font-size: 36px;    /* Setter størrelsen på teksten */
     color: rgb(230, 12, 139);   /* Setter fargen på teksten, her er det en oransje nyanse */
+    margin-bottom: -55px;
+    margin-top: 0px;
   }
   
