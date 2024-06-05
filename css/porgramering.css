@@ -55,21 +55,28 @@
     box-sizing: border-box;
   }
   
-  .responsive {
-    padding: 20px;
+  .responsive5 {
+    padding: 70px;
     float: left;
-    width: 32%;
+    width: 50%;
   }
   
   @media only screen and (max-width: 700px) {
-    .responsive {
-      width: 49.99999%;
-      margin: 6px 0;
+    .responsive5 {
+      width: 40.99999%;
+      margin: 8px 0;
     }
   }
   
   @media only screen and (max-width: 500px) {
-    .responsive {
-      width: 100%;
+    .responsive5 {
+      width: 90%;
     }
   }
+
+  .head h1 {
+    text-align: center; /* Sentrerer teksten horisontalt */
+    font-size: 36px;    /* Setter størrelsen på teksten */
+    color: rgb(230, 12, 139);   /* Setter fargen på teksten, her er det en oransje nyanse */
+  }
+  

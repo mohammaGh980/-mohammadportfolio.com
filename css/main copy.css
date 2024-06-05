@@ -5,8 +5,7 @@ body {
     background-repeat: no-repeat;
     height: 120vh;
     color: rgb#8c19b9; /* Sett teksten til hvit farge for kontrast mot bakgrunnsbildet */
-    font-family: Arial, sans-serif; /* Velg en passende font */
-    margin: 10;  
+    font-family: Arial, sans-serif; /* Velg en passende font */ 
 }
 #navn {
     position: absolute;
@@ -55,6 +54,11 @@ body {
     top: 250px; /* Avstand fra toppen av vinduet */
     left: 170px; /* Avstand fra venstre kant av vinduet */
     font-size: 40px;
+}
+.head2{
+  color: #fff9f9;
+  margin-left: 10px;
+  margin-top: 10px;
 }
 .farge3 {
     color: rgb(253, 252, 253) /* Første farge for navnet ditt */
@@ -184,6 +188,7 @@ a {
   padding: 20px; /* Tilpass padding etter behov */
   color: #fff9f9; /* Tekstfarge for kontrast */
   margin-top: 400px;
+  width: 98%;
 }
 #follow-me {
   position: absolute;
@@ -204,7 +209,18 @@ a {
   top: 1080px; /* Adjust this value to move the element up or down */
   right: 186px; /* Adjust this value to move the element left or right */
   margin: 10; 
-  font-size: 15px;
+ font-size: 15px;
+}
+
+.styled-image {
+  width: 300px; /* Setter bredden på bildet */
+  height: auto; /* Opprettholder bildets forhold */
+  border: 5px solid rgb(230, 12, 139);  /* Legger til en oransje ramme rundt bildet */
+  border-radius: 15px; /* Gjør hjørnene på bildet avrundede */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Legger til en skyggeeffekt */
+  display: block; /* Gjør bildet til et blokkelement */
+  margin: 20px auto; /* Sentrerer bildet horisontalt og legger til topp og bunnmarg */
+  margin-left: 10px;
 }
 
 
