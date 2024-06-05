@@ -233,4 +233,38 @@ a {
   margin-left: 10px;
 }
 
+.container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  text-align: center;
+  margin: 20px;
+  
+}
+
+.image-box {
+  margin: 10px;
+}
+
+.image-box img {
+  width: 300px;
+  height: auto;
+  border: 5px solid rgb(230, 12, 139);
+}
+
+.image-box p {
+  margin-top: 20px;
+  color: #f4f4f4;
+}
+.image-box1 img {
+  width: 700px;
+  height: auto;
+  margin-top: 20px;
+  border: 5px  solid rgb(230, 12, 139);
+}
+.image-box1 p {
+  color: #f4f4f4;
+  margin-left: 10px;
+  font-size: 19px;
+}
 
