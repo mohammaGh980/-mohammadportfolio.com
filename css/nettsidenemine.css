@@ -1,206 +1,81 @@
-/*css til bilder i konseptutvikling og porgramering*/
+*{
+  color: #fcfafa;o
+}
+
+.container {
+  display: none;
+  grid-template-columns: 50% 50%;
+  padding: 20px;
+}
+
+.info {
+  padding-left: 30px;
+  font-size: 25px;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 20px;
+  border: 0px solid rgb(224, 224, 224)
+}
+.container {
+  display: flex;
+  justify-content: center; /* Plasserer innholdet i midten horisontalt */
+  align-items: flex-start; /* Plasserer innholdet øverst vertikalt */
+  height: 10%; /* Fyller hele høyden av visningen */
+}
+
+.img-sidebar{
+  font-size: 10px;
+}
 div.gallery {
-    border: 5px solid #fe4800;
+  border: 5px solid rgb(230, 12, 139);
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive5 {
+  padding: 70px;
+  float: left;
+  width: 50%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive5 {
+    width: 40.99999%;
+    margin: 8px 0;
   }
-  
-  div.gallery:hover {
-    border: 1px solid #777;
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive5 {
+    width: 90%;
   }
-  
-  div.gallery img {
-    width: 100%;
-    height: auto;
-  }
-  
-  div.desc {
-    padding: 15px;
-    text-align: center;
-  }
-  
-  * {
-    box-sizing: border-box;
-  }
-  
-  .responsive {
-    padding: 20px;
-    float: left;
-    width: 50%;
-  }
-  
-  .clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  .topnav {
-    overflow: hidden;
-    background-color: rgb(255, 81, 0);
-    padding: 0px;
 }
 
-.topnav a,
-.dropdown {
-    float: left;
-    color: rgb(0, 0, 0);
-    text-align: left;
-    padding: 20px;
-    text-decoration: none;
-    font-size: 25px
-}
-
-.topnav a:hover {
-    background-color: rgb(255, 81, 0);
-    color: rgb(255, 255, 255);
-}
-
-.topnav a.active {
-    color: #040404;
-}
-.dropbtn{
-    background-color: rgb(255, 81, 0);
-}
-.dropbtnact {
-    background-color: rgb(255, 81, 0);
-    color: rgb(0, 0, 0);
-    padding: 16px;
-    font-size: 16px;
-    border: rgb(255, 81, 0);
-}
-
-
-.dropdown {
-    float: left;
-    overflow: hidden;
-}
-
-.dropdown a.active {
-    color: rgb(255, 81, 0);
-    border: solid black;
-}
-
-
-
-.dropdown .dropbtn {
-    font-size: inherit;
-    border: none;
-    outline: none;
-    font-family: inherit;
-    margin: 0px;
-}
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: rgb(0, 0, 0);
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    outline: none; /* Legg til denne linjen for å fjerne grensen */
-}
-
-.dropdown-content a {
-    color: rgb(255, 255, 255);
-    background-color: rgb(255, 81, 0);
-    padding: 10px 16px;
-    text-decoration: none;
-    display: block;
-    float: none;
-    text-align: left;
-    border: none; /* Fjern border-egenskapen på lenkene */
-}
-/* For hovering on dropdown content*/
-.dropdown:hover .dropdown-content {
-    display: block;
-    box-shadow: none; /* Fjern box-shadow-egenskapen for hover-tilstand */
-}
-
-.topnav a:hover {
-    background-color: rgb(253, 253, 253);
-    color: rgb(4, 4, 4);
-}
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color:  rgb(241, 172, 11);
-  }
-  
-  .sidebar {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    right: 0;
-    background-color: rgb(255, 81, 0);
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-  }
-  
-  .sidebar a {
-    padding: 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #140505;
-    display: block;
-  }
-  
-  .sidebar a:hover {
-    color: #000000;
-  }
-  
-  .sidebar .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-  }
-  
-  .openbtn {
-    font-size: 30px;
-    cursor: pointer;
-    background-color:rgb(255, 81, 0);
-    color: rgb(5, 5, 5);
-    border: none;
-    margin-right: 9px;
-    margin: 10px;
-  }
-  .topnav input[type="text"] {
-    float: left;
-    padding: 10px;
-    margin-top: 15px;
-    margin-left: 700px;
-    border: none;
-    font-size: 16px;
-    width: 200px; /* Juster bredden etter behov */
-}
-
-/* Endre stilen til søkefeltet på hover for bedre brukeropplevelse */
-.topnav input[type="text"]:hover,
-.topnav input[type="text"]:focus {
-    outline: none;
-    background-color: #ffffff;
-}
-
-#searchResult {
-    position: absolute;
-    width: 200px; /* Juster bredden etter behov */
-    right: 115px;
-    top: 70px; /* Juster toppmargin etter behov */
-    background-color: rgb(255, 81, 0);
-    border: 1px solid #ffffff;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  
-}
-
-/* Stiler for søkeresultat-lenker */
-#searchResult a {
-    display: block;
-    padding: 10px;
-    text-decoration: none;
-    color: #0c0c0c;
-    transition: background-color 0.3s;
-}
-
-#searchResult a:hover {
-    background-color: #f9f9f9;
+.head h1 {
+  text-align: center; /* Sentrerer teksten horisontalt */
+  font-size: 36px;    /* Setter størrelsen på teksten */
+  color: rgb(230, 12, 139);   /* Setter fargen på teksten, her er det en oransje nyanse */
 }
