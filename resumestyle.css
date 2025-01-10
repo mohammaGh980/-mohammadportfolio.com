@@ -38,6 +38,13 @@ a {
 	font-size: 2rem;
 	text-transform: uppercase;
 }
+.title12{
+	margin-top: 4rem;
+	color: var(--primary-color);
+	font-weight: 700;
+	font-size: 2rem;
+	text-transform: uppercase;
+}
 .item_preTitle {
 	font-size: 1.4rem;
 	color: var(--text-color);

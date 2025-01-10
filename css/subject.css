@@ -62,3 +62,81 @@ div.desc {
   height: 2%;
 }
 
+.choice-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  gap: 30px;
+}
+
+.choice-btn {
+  position: relative;
+  display: inline-block;
+  padding: 15px 40px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: linear-gradient(135deg, #6a11cb, rgb(230, 12, 139));
+  border: none;
+  border-radius: 50px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.choice-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0));
+  transition: all 0.4s ease;
+}
+
+.choice-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.choice-btn:hover::before {
+  left: 100%;
+}
+
+.choice-btn i {
+  margin-right: 10px;
+  font-size: 1.2em;
+}
+
+/* Responsiv design */
+@media (max-width: 600px) {
+  .choice-container {
+      flex-direction: column;
+      gap: 20px;
+  }
+
+  .choice-btn {
+      font-size: 18px;
+      padding: 12px 30px;
+  }
+}
+
+.vg1-title {
+  font-size: 3rem; /* Stor og tydelig skrift */
+  font-weight: bold; /* Tykk skrift for autoritet */
+  text-align: center; /* Midtstiller teksten */
+  margin: 20px auto; /* Litt mellomrom rundt */
+  color: #2E7D32; /* Elegant grønnfarge */
+  text-transform: uppercase; /* Store bokstaver */
+  letter-spacing: 2px; /* Litt mellomrom mellom bokstavene */
+  background: linear-gradient(90deg, #6a11cb, rgb(230, 12, 139)); /* Gradient-farge */
+  -webkit-background-clip: text; /* Bruk gradient som tekstfarge */
+  -webkit-text-fill-color: transparent; /* Gjør gradienten synlig */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Lett skygge for dybde */
+}
+

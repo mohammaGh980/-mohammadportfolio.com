@@ -268,3 +268,63 @@ a {
   font-size: 19px;
 }
 
+
+/* Standard stil for større skjermar forblir som den er */
+
+/* For skjermar mindre enn 768px (typisk for mobil) */
+@media screen and (max-width: 768px) {
+  body {
+      height: auto; /* Fjern fast høgde for å unngå skjermoverflyt */
+      margin: 0; /* Fjern ekstra marginar */
+  }
+  
+  #navn {
+      position: static; /* Gjer plassering fleksibel */
+      text-align: center; /* Sentraliser tekst på mobil */
+      font-size: 18px; /* Reduser storleik på font */
+  }
+  
+  .h1, .h2, .animated-text {
+      position: static; /* Fjern absolutt posisjonering */
+      text-align: center; /* Sentraliser tekst */
+      font-size: 24px; /* Juster storleik */
+      margin-top: 20px;
+  }
+  
+  .topnav {
+      flex-direction: column; /* Endre navigasjonen til ein vertikal layout */
+      align-items: center;
+  }
+  
+  .topnav a {
+      padding: 10px; /* Reduser padding */
+      font-size: 14px; /* Mindre fontstorleik */
+  }
+  
+  .gallery2 {
+      width: 100%; /* Gjer bildegalleriet fleksibelt */
+      height: auto; /* Juster høgda automatisk */
+  }
+  
+  .sidebar {
+      width: 100%; /* Gjer sidebaren full breidde på mobil */
+  }
+  
+  #clock-container {
+      position: static; /* Flytt klokka til ein fleksibel posisjon */
+      text-align: center;
+      margin-top: 10px;
+  }
+  
+    #contact-section {
+      margin-top: 50px; /* Juster marginen for betre spacing */
+  }
+  
+  #follow-me, #insta, #git-hup {
+      position: static; /* Gjer posisjonering fleksibel */
+      text-align: center; /* Sentraliser teksten */
+      margin-top: 20px;
+  }
+}
+
+
