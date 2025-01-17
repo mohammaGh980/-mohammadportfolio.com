@@ -29,8 +29,13 @@ body {
     height: 10%; /* Fyller hele høyden av visningen */
   }
   .topnav {
-    display: flex;
-  }
+    position: fixed;
+    top: 30px;
+    left: 540px;
+    width: 100%;
+    z-index: 100;
+}
+
   .topnav a {
     color: rgb(255, 255, 255);
     text-align: center;
@@ -144,14 +149,17 @@ div.desc {
   }
   
   .openbtn {
+    position: fixed;
+    top: 20px;
+    right: 570px;
+    z-index: 1100;
+    border:none;
+    color: #f4f4f4;
     font-size: 30px;
-    cursor: pointer;
-    color: rgb(248, 241, 245);
-    background-color: #450262;
-    border: none;
-    margin-right: 9px;
-    margin: 10px;
-  }
+    background-color:#450262;
+    
+}
+
   .img-sidebar{
     font-size: 10px;
   }
