@@ -61,6 +61,35 @@ div.desc {
   width: 32%;
   height: 2%;
 }
+#contact-section {
+  background-color: rgb(230, 12, 139); /* Annerledes farge for kontaktseksjonen */
+  padding: 20px; /* Tilpass padding etter behov */
+  color: #fff9f9; /* Tekstfarge for kontrast */
+  margin-top: 400px;
+  width: 98%;
+}
+#follow-me {
+  position: absolute;
+  top: 1050px; /* Adjust this value to move the element up or down */
+  right: 130px; /* Adjust this value to move the element left or right */
+  margin: 0;
+  font-size: 20px;
+}
+#insta {
+  position: absolute;
+  top: 1130px; /* Adjust this value to move the element up or down */
+  right: 90px; /* Adjust this value to move the element left or right */
+  margin: 0; 
+  font-size: 15px;
+}
+#git-hup{
+  position: absolute;
+  top: 1080px; /* Adjust this value to move the element up or down */
+  right: 186px; /* Adjust this value to move the element left or right */
+  margin: 10; 
+ font-size: 15px;
+}
+
 
 .choice-container {
   display: flex;
