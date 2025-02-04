@@ -61,6 +61,12 @@
     width: 50%;
   }
   
+  .responsive4 {
+    padding: 70px;
+    float: left;
+    width: 50%;
+  }
+  
   @media only screen and (max-width: 700px) {
     .responsive5 {
       width: 40.99999%;

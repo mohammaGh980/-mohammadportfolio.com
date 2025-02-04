@@ -31,7 +31,7 @@ body {
   .topnav {
     position: fixed;
     top: 30px;
-    left: 540px;
+    left: 840px;
     width: 100%;
     z-index: 100;
 }
@@ -39,7 +39,8 @@ body {
   .topnav a {
     color: rgb(255, 255, 255);
     text-align: center;
-    padding: 18px 20px;
+    padding: 10px 0px;
+    margin-right: 90px;
     text-decoration: none;
     border-bottom: 2px solid transparent; /* Starter med usynlig bunnlinje */
     transition: border-bottom 0.3s; /* Gjør overgangen glatt */
@@ -117,11 +118,11 @@ div.desc {
 
 .sidebar {
     height: 100%;
-    width: 0;
+    width: 0%;
     position: fixed;
     z-index: 1;
     top: 0;
-    right: 0;
+    right: 0px;
     background-color: #7d27a2;
     overflow-x: hidden;
     transition: 0.5s;
