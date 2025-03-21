@@ -281,7 +281,7 @@ a {
 /* Standard stil for større skjermar forblir som den er */
 
 /* For skjermar mindre enn 768px (typisk for mobil) */
-@media screen and (max-width: 768px) {
+                                     
   body {
       height: auto; /* Fjern fast høgde for å unngå skjermoverflyt */
       margin: 0; /* Fjern ekstra marginar */
