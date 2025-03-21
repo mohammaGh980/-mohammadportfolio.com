@@ -4,77 +4,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main copy.css">
     <link rel="stylesheet" href="css/subject.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <title>Document</title>
 </head>
 
 <body>
-    <div class="topnav">
-        <a href="index.html"><img src="images/josdnbipu777777777777777777777777777777.png" alt="Logo" class="logo"></a>
-        <a class="active" href="index.html"><i class="fa fa-fw fa-home"></i> Heim</a>
-        <div class="dropdown">
-            <button class="dropbtn">Mine fag</button>
-            <div class="dropdown-content">
-                <a href="subject.html">Alle mine fag</a>
-                <a href="porgrammering.html">Konseptutv. og porgrammering</a>
-                <a href="prodoghistorieforteling.html">Prod. og historieforteling</a>
-                <a href="teknologi.html">Teknologiforståelse</a>
+    <div class="name">
+        <div id="navn">
+            <span class="farge1">Mohammad</span> <span class="farge2">Ghalyoun</span>
+        </div>
+
+        <div class="image-container">
+            <div class="topnav">
+                <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+                <a href="about.html"><i class="fa-solid fa-user"></i> About</a>
+                <a href="subject.html"><i class="fa fa-book-open"></i> Subject</a>
+                <a href="contact-section"><i class="fa-solid fa-phone"></i> Contact</a>
+                <a href="resume.html"><i class="fa-sharp-duotone fa-solid fa-file"></i>  Resume</a>
+                <div id="mySidebar" class="sidebar">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                    <a href="subject.html"><i class="fa fa-book-open"></i> Subject</a>
+                    <a href="porgrammering.html"><i class="fa-solid fa-code"></i> Konseptutvikling</a>
+                    <a href="prodoghistorieforteling.html"><i class="fa fa fa-camera"></i> Prod. og
+                        historieforteling</a>
+                    <a href="teknologi.html"><i class="fa-solid fa-desktop"></i> Teknologiforståelse</a>
+                    <a href="about.html"><i class="fa-solid fa-user"></i> about</a>
+                    <a href="contactme.html"><i class="fa-solid fa-phone"></i> Contact</a>
+                    <div class="img-sidebar">
+                      
+                    </div>
+                </div>
             </div>
         </div>
-            
-        <div class="search">
-            <input type="text" id="searchInput" placeholder="søk her på inhold " oninput="searchGames()">
-            <!-- søkeresultatene vises mens du skriver -->
-            <div id="searchResult"></div>
-        </div>
-        <div id="mySidebar" class="sidebar">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-            <a href="subject.html">Alle mine fag</a>
-            <a href="porgrammering.html">Konseptutv. og porgrammering</a>
-            <a href="prodoghistorieforteling.html">Prod. og historieforteling</a>
-            <a href="teknologi.html">Teknologiforståelse</a>
-            <a href="about.html">Om Meg</a>
-            <a href="contactme.html"><i class="fa fa-fw fa-envelope"></i>kontakt meg</a>
-        </div>
-
-        <div id="searchResults"></div>
-
         <div id="main">
             <button class="openbtn" onclick="openNav()">☰ </button>
         </div>
-
     </div>
+
+    <!-- Seksjon med fancy knapper -->
+    <div class="choice-container">
+        <a href="subject.html" class="choice-btn">
+            <i class="fa-solid fa-graduation-cap"></i> VG1 Fag
+        </a>
+        <a href="vg2.html" class="choice-btn">
+            <i class="fa-solid fa-book"></i> VG2 Fag
+        </a>
+    </div>
+
+    <h1 class="vg1-title">VG1</h1>
 
     <div class="responsive">
         <div class="gallery">
             <a target="_blank" href="porgrammering.html">
-                <img src="images/porgramering bilde.jpeg">
+                <img src="images/porgramering framside.jpeg" alt="Konseptutv. og programmering">
             </a>
-            <div class="desc">Konseptutv. og porgrammering</div>
+            <div class="desc">Konseptutv. og programmering</div>
         </div>
-    </div>
 
-    <div class="responsive">
-        <div class="gallery">
-            <a target="_blank" href="prodoghistorieforteling.html">
-                <img src="images/historiforteling bilde.jpeg">
-            </a>
-            <div class="desc">Prod. og historieforteling</div>
-        </div>
     </div>
-
+    </div>
 
     <div class="responsive">
         <div class="gallery">
             <a target="_blank" href="teknologi.html">
-                <img src="images/teknologi bilde.jpeg">
+                <img src="images/teknolig forstålese framside.jpeg" alt="Teknologiforståelse">
             </a>
+
             <div class="desc">Teknologiforståelse</div>
         </div>
     </div>
-    <script src="heim.js"></script>
+
+
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="prodoghistorieforteling.html">
+                <img src="images/crop5.jpeg" alt="Prod. og historiefortelling">
+            </a>
+            <div class="desc">Prod. og historiefortelling</div>
+        </div>
+
+        <script src="heim copy.js"></script>
 </body>
 
 </html>

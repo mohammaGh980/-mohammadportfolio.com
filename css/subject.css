@@ -1,239 +1,40 @@
-.vertical-menu {
-  width: 500px;
-  margin-top: 50px;
-  ;
-
+*{
+  color: #fcfafa;o
 }
 
-.vertical-menu a {
-  /* orange background color */
-  background-color: rgb(255, 81, 0);
-  /* Black text color */
-  color: rgb(10, 10, 10);
-  display: block;
-  padding: 60px;
-  text-decoration: none;/
-}
-
-.vertical-menu a:hover {
-  background-color: #fbf8f6;
-  /* kvit bakgrunn på musen over */
-}
-
-.vertical-menu a.active {
-  background-color: rgb(255, 81, 0);
-  /*  */
-  color: rgb(0, 0, 0);
-  padding: 50px;
-}
-
-.topnav {
-  overflow: hidden;
-  background-color: rgb(255, 81, 0);
-  padding: 0px;
-}
-
-.topnav a,
-.dropdown {
-  float: left;
-  color: rgb(0, 0, 0);
-  text-align: left;
+.container {
+  display: none;
+  grid-template-columns: 50% 50%;
   padding: 20px;
-  text-decoration: none;
-  font-size: 25px
 }
 
-.topnav a:hover {
-  background-color: rgb(255, 81, 0);
-  color: rgb(255, 238, 238);
+.info {
+  padding-left: 30px;
+  font-size: 25px;
+}
+img {
+  width: 100%;
+  height: auto;
 }
 
-.topnav a.active {
-  color: #040404;
-}
 .container {
   display: grid;
   grid-template-columns: 50% 50%;
   padding: 20px;
-  border: 10px solid rgb(255, 81, 0)
+  border: 0px solid rgb(224, 224, 224)
+}
+.container {
+  display: flex;
+  justify-content: center; /* Plasserer innholdet i midten horisontalt */
+  align-items: flex-start; /* Plasserer innholdet øverst vertikalt */
+  height: 10%; /* Fyller hele høyden av visningen */
 }
 
-.funtype {
-  padding-left: 30px;
-  font-size: 30px;
-}
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.dropbtnact {
-  background-color: rgb(255, 81, 0);
-  color: rgb(249, 249, 249);
-  padding: 16px;
-  font-size: 16px;
-  border: rgb(255, 81, 0);
-}
-
-
-.dropdown {
-  float: left;
-  overflow: hidden;
-}
-
-.dropdown a.active {
-  color: rgb(255, 81, 0);
-  border: solid black;
-}
-
-
-
-.dropdown .dropbtn {
-  font-size: inherit;
-  border: none;
-  outline: none;
-  font-family: inherit;
-  margin: 0px;
-}
-
-
-
-.dropdown:hover .dropbtn {
-  color: rgb(0, 0, 0);
-}
-
-
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: rgb(255, 254, 254);
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: rgb(255, 255, 255);
-  background-color: rgb(255, 81, 0);
-  padding: 10px 16px;
-  text-decoration: none;
-  display: block;
-  float: none;
-  text-align: left;
-}
-
-.dropbtn{
-  background-color: rgb(255, 81, 0);
-}
-/* For hovering on dropdown content*/
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.topnav a:hover {
-  background-color: rgb(253, 253, 253);
-  color: rgb(4, 4, 4);
-}
-body {
-  font-family: Arial, Helvetica, sans-serif
-}
-
-.sidebar {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  right: 0;
-  background-color: rgb(255, 81, 0);
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-}
-
-.sidebar a {
-  padding: 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #f7f7f7;
-  display: block;
-}
-
-.sidebar a:hover {
-  color: #f1f1f1;
-}
-
-.sidebar .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-
-.openbtn {
-  font-size: 30px;
-  cursor: pointer;
-  background-color:rgb(255, 81, 0);
-  color: rgb(5, 5, 5);
-  border: none;
-  margin-right: 9px;
-  margin: 10px;
-}
-.topnav input[type="text"] {
-  float: left;
-  padding: 10px;
-  margin-top: 15px;
-  margin-left: 700px;
-  border: none;
-  font-size: 16px;
-  width: 200px; /* Juster bredden etter behov */
-}
-
-/* Endre stilen til søkefeltet på hover for bedre brukeropplevelse */
-.topnav input[type="text"]:hover,
-.topnav input[type="text"]:focus {
-  outline: none;
-  background-color: #ffffff;
-}
-
-#searchResult {
-  position: absolute;
-  width: 200px; /* Juster bredden etter behov */
-  right: 135px;
-  top: 70px; /* Juster toppmargin etter behov */
-  background-color: rgb(255, 81, 0);
-  border: 1px solid #ddd;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-
-}
-
-/* Stiler for søkeresultat-lenker */
-#searchResult a {
-  display: block;
-  padding: 10px;
-  text-decoration: none;
-  color: #0c0c0c;
-  transition: background-color 0.3s;
-}
-
-#searchResult a:hover {
-  background-color: #f9f9f9;
-}
-
-
-body {
-  background-color: rgb(241, 172, 11);
-}
-
-
-body {
-  /*skrifttype til minefag nettside*/
-  font-family: Arial, Helvetica, sans-serif;
+.img-sidebar{
+  font-size: 10px;
 }
 div.gallery {
-  border: 5px solid #fe4800;
+  border: 5px solid rgb(230, 12, 139);
 }
 
 div.gallery:hover {
@@ -258,33 +59,113 @@ div.desc {
   padding: 20px;
   float: left;
   width: 32%;
+  height: 2%;
+}
+#contact-section {
+  background-color: rgb(230, 12, 139); /* Annerledes farge for kontaktseksjonen */
+  padding: 20px; /* Tilpass padding etter behov */
+  color: #fff9f9; /* Tekstfarge for kontrast */
+  margin-top: 400px;
+  width: 98%;
+}
+#follow-me {
+  position: absolute;
+  top: 1050px; /* Adjust this value to move the element up or down */
+  right: 130px; /* Adjust this value to move the element left or right */
+  margin: 0;
+  font-size: 20px;
+}
+#insta {
+  position: absolute;
+  top: 1130px; /* Adjust this value to move the element up or down */
+  right: 90px; /* Adjust this value to move the element left or right */
+  margin: 0; 
+  font-size: 15px;
+}
+#git-hup{
+  position: absolute;
+  top: 1080px; /* Adjust this value to move the element up or down */
+  right: 186px; /* Adjust this value to move the element left or right */
+  margin: 10; 
+ font-size: 15px;
 }
 
-@media only screen and (max-width: 700px) {
-  .responsive {
-    width: 49.99999%;
-    margin: 6px 0;
-  }
-}
 
-@media only screen and (max-width: 500px) {
-  .responsive {
-    width: 100%;
-  }
-}
-
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.containerimg{
+.choice-container {
   display: flex;
-justify-content: space-around;
-max-width: 100%;
-height: auto;
-padding: 20px;
-flex-wrap: wrap;
-align-items: baseline;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  gap: 30px;
+}
+
+.choice-btn {
+  position: relative;
+  display: inline-block;
+  padding: 15px 40px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: linear-gradient(135deg, #6a11cb, rgb(230, 12, 139));
+  border: none;
+  border-radius: 50px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.choice-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0));
+  transition: all 0.4s ease;
+}
+
+.choice-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.choice-btn:hover::before {
+  left: 100%;
+}
+
+.choice-btn i {
+  margin-right: 10px;
+  font-size: 1.2em;
+}
+
+/* Responsiv design */
+@media (max-width: 600px) {
+  .choice-container {
+      flex-direction: column;
+      gap: 20px;
+  }
+
+  .choice-btn {
+      font-size: 18px;
+      padding: 12px 30px;
+  }
+}
+
+.vg1-title {
+  font-size: 3rem; /* Stor og tydelig skrift */
+  font-weight: bold; /* Tykk skrift for autoritet */
+  text-align: center; /* Midtstiller teksten */
+  margin: 20px auto; /* Litt mellomrom rundt */
+  color: #2E7D32; /* Elegant grønnfarge */
+  text-transform: uppercase; /* Store bokstaver */
+  letter-spacing: 2px; /* Litt mellomrom mellom bokstavene */
+  background: linear-gradient(90deg, #6a11cb, rgb(230, 12, 139)); /* Gradient-farge */
+  -webkit-background-clip: text; /* Bruk gradient som tekstfarge */
+  -webkit-text-fill-color: transparent; /* Gjør gradienten synlig */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Lett skygge for dybde */
 }
 

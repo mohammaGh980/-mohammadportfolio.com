@@ -1,13 +1,11 @@
 body {
-    background-image: url('../images/home-bg.dc52d5d4.jpg');
+   background-color: #450262;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 120vh;
     color: rgb#8c19b9; /* Sett teksten til hvit farge for kontrast mot bakgrunnsbildet */
-    font-family: Arial, sans-serif; /* Velg en passende font */
-    margin: 10;
-    
+    font-family: Arial, sans-serif; /* Velg en passende font */ 
 }
 #navn {
     position: absolute;
@@ -24,19 +22,25 @@ body {
     color: rgb(230, 12, 139); /* Andre farge for navnet ditt */
 }
 
-.container {
+.name{
     display: flex;
     justify-content: center; /* Plasserer innholdet i midten horisontalt */
     align-items: flex-start; /* Plasserer innholdet øverst vertikalt */
     height: 10%; /* Fyller hele høyden av visningen */
   }
   .topnav {
-    display: flex;
-  }
+    position: fixed;
+    top: 30px;
+    left: 840px;
+    width: 100%;
+    z-index: 100;
+}
+
   .topnav a {
     color: rgb(255, 255, 255);
     text-align: center;
-    padding: 18px 20px;
+    padding: 10px 0px;
+    margin-right: 90px;
     text-decoration: none;
     border-bottom: 2px solid transparent; /* Starter med usynlig bunnlinje */
     transition: border-bottom 0.3s; /* Gjør overgangen glatt */
@@ -48,14 +52,19 @@ body {
   .h1{
     position: absolute;
     top: 200px; /* Avstand fra toppen av vinduet */
-    left: 450px; /* Avstand fra venstre kant av vinduet */
+    left: 225px; /* Avstand fra venstre kant av vinduet */
     font-size: 40px;
 }
 .h2{
     position: absolute;
     top: 250px; /* Avstand fra toppen av vinduet */
-    left: 390px; /* Avstand fra venstre kant av vinduet */
+    left: 170px; /* Avstand fra venstre kant av vinduet */
     font-size: 40px;
+}
+.head2{
+  color: #fff9f9;
+  margin-left: 10px;
+  margin-top: 10px;
 }
 .farge3 {
     color: rgb(253, 252, 253) /* Første farge for navnet ditt */
@@ -74,25 +83,47 @@ body {
     font-size: 40px;
     text-align: center;
     margin-bottom: 20px;
-    margin-top: 25vh; /* Endre denne verdien for å justere avstanden fra bunnen */
-    margin-right: 70vh;
-    transform: translateY(-50%); /* Juster for å sentrere vertikalt */
+    position: absolute;
+    top: 340px; /* Avstand fra toppen av vinduet */
+    left: 105px; /* Avstand fra venstre kant av vinduet */
+    font-size: 40px;
     color: rgb(190, 80, 244);
 }
-.img{
-    position: absolute;
-    top: 150px; /* Avstand fra toppen av vinduet */
-    right:0px; /* Avstand fra venstre kant av vinduet */
-    font-size: 10px;
+div.gallery2 {
+  border: 5px solid rgb(230, 12, 139);
+  top: 60px; /* Juster for å sentrere bildet vertikalt */
+  left: 280px;  /* Juster for å sentrere bildet horisontalt */
 }
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+.responsive2 {
+  display: flex;
+  justify-content: center;
+}
+.gallery2 {
+  width: 630px; /* Sett ønsket bredde */
+  height: 490px; /* Sett ønsket høyde */
+  overflow: hidden;
+  position: relative;
+}
+.gallery2 img {
+  width: 100%;
+  height: auto; /* Bevar bildets proporsjoner */
+  position: absolute; /* Gjør at vi kan posisjonere bildet innenfor containeren */
+  top: -353px;px; /* Juster for å sentrere bildet vertikalt */
+  right: 0px; /* Juster for å sentrere bildet horisontalt */
+}
+
 .sidebar {
     height: 100%;
-    width: 0;
+    width: 0%;
     position: fixed;
     z-index: 1;
     top: 0;
-    right: 0;
-    background-color: #361942;
+    right: 0px;
+    background-color: #7d27a2;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -119,14 +150,190 @@ body {
   }
   
   .openbtn {
+    position: fixed;
+    top: 20px;
+    right: 570px;
+    z-index: 1100;
+    border:none;
+    color: #f4f4f4;
     font-size: 30px;
-    cursor: pointer;
-    color: rgb(248, 241, 245);
-    background-color: #533c5c;
-    border: none;
-    margin-right: 9px;
-    margin: 10px;
-  }
+    background-color:#450262;
+    
+}
+
   .img-sidebar{
     font-size: 10px;
   }
+
+  /* digital klokke */
+  #clock {
+    font-size: 20px;
+    color: rgb(230, 12, 139);
+    position: absolute;
+    top: 24px;
+    right: 50px;
+}
+#clock-container {
+  position: absolute;
+  top: 24px;
+  right: 10px;
+  padding: 10px;
+  border: 2px solid rgb(19, 12, 230);
+  background-color: rgba(230, 12, 139, 0.1); /* Bakgrunnsfarge med litt gjennomsiktighet */
+  border-radius: 5px; /* Gjør hjørnene avrundet */
+}
+#clock {
+  font-size: 28px;
+  color: rgb(230, 12, 139);
+  font-family:serif;
+}
+a {
+    text-decoration: none;
+    color: inherit; /* Behold fargen fra foreldreelementet (h1) */
+}
+
+#contact-section {
+  background-color: rgb(230, 12, 139); /* Annerledes farge for kontaktseksjonen */
+  padding: 20px; /* Tilpass padding etter behov */
+  color: #fff9f9; /* Tekstfarge for kontrast */
+  margin-top: 400px;
+  width: 98%;
+}
+#follow-me {
+  position: absolute;
+  top: 1050px; /* Adjust this value to move the element up or down */
+  right: 130px; /* Adjust this value to move the element left or right */
+  margin: 0;
+  font-size: 20px;
+}
+#insta {
+  position: absolute;
+  top: 1130px; /* Adjust this value to move the element up or down */
+  right: 90px; /* Adjust this value to move the element left or right */
+  margin: 0; 
+  font-size: 15px;
+}
+#git-hup{
+  position: absolute;
+  top: 1080px; /* Adjust this value to move the element up or down */
+  right: 186px; /* Adjust this value to move the element left or right */
+  margin: 10; 
+ font-size: 15px;
+}
+
+.styled-image {
+  width: 300px; /* Setter bredden på bildet */
+  height: auto; /* Opprettholder bildets forhold */
+  border: 5px solid rgb(230, 12, 139);  /* Legger til en oransje ramme rundt bildet */
+  border-radius: 15px; /* Gjør hjørnene på bildet avrundede */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Legger til en skyggeeffekt */
+  display: block; /* Gjør bildet til et blokkelement */
+  margin: 20px auto; /* Sentrerer bildet horisontalt og legger til topp og bunnmarg */
+  margin-left: 10px;
+}
+.styled-image1 {
+  width: 400px; /* Setter bredden på bildet */
+  height: auto; /* Opprettholder bildets forhold */
+  border: 5px solid rgb(230, 12, 139);  /* Legger til en oransje ramme rundt bildet */
+  border-radius: 15px; /* Gjør hjørnene på bildet avrundede */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Legger til en skyggeeffekt */
+  display: block; /* Gjør bildet til et blokkelement */
+  margin: 20px auto; /* Sentrerer bildet horisontalt og legger til topp og bunnmarg */
+  margin-left: 10px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  text-align: center;
+  margin: 20px;
+  
+}
+
+.image-box {
+  margin: 10px;
+}
+
+.image-box img {
+  width: 300px;
+  height: auto;
+  border: 5px solid rgb(230, 12, 139);
+}
+
+.image-box p {
+  margin-top: 20px;
+  color: #f4f4f4;
+}
+.image-box1 img {
+  width: 700px;
+  height: auto;
+  margin-top: 20px;
+  border: 5px  solid rgb(230, 12, 139);
+}
+.image-box1 p {
+  color: #f4f4f4;
+  margin-left: 10px;
+  font-size: 19px;
+}
+
+
+/* Standard stil for større skjermar forblir som den er */
+
+/* For skjermar mindre enn 768px (typisk for mobil) */
+                                     
+  body {
+      height: auto; /* Fjern fast høgde for å unngå skjermoverflyt */
+      margin: 0; /* Fjern ekstra marginar */
+  }
+  
+  #navn {
+      position: static; /* Gjer plassering fleksibel */
+      text-align: center; /* Sentraliser tekst på mobil */
+      font-size: 18px; /* Reduser storleik på font */
+  }
+  
+  .h1, .h2, .animated-text {
+      position: static; /* Fjern absolutt posisjonering */
+      text-align: center; /* Sentraliser tekst */
+      font-size: 24px; /* Juster storleik */
+      margin-top: 20px;
+  }
+  
+  .topnav {
+      flex-direction: column; /* Endre navigasjonen til ein vertikal layout */
+      align-items: center;
+  }
+  
+  .topnav a {
+      padding: 10px; /* Reduser padding */
+      font-size: 14px; /* Mindre fontstorleik */
+  }
+  
+  .gallery2 {
+      width: 100%; /* Gjer bildegalleriet fleksibelt */
+      height: auto; /* Juster høgda automatisk */
+  }
+  
+  .sidebar {
+      width: 100%; /* Gjer sidebaren full breidde på mobil */
+  }
+  
+  #clock-container {
+      position: static; /* Flytt klokka til ein fleksibel posisjon */
+      text-align: center;
+      margin-top: 10px;
+  }
+  
+    #contact-section {
+      margin-top: 50px; /* Juster marginen for betre spacing */
+  }
+  
+  #follow-me, #insta, #git-hup {
+      position: static; /* Gjer posisjonering fleksibel */
+      text-align: center; /* Sentraliser teksten */
+      margin-top: 20px;
+  }
+}
+
+

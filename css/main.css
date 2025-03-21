@@ -1,258 +1,212 @@
 body {
-    background-color: rgb(241, 172, 11);
-    /* orange bakground for my Hom (heim)wep*/
-    background-size: cover;
-}
-
-.logo-link {
-    display: inline-block; /* Sørg for at lenken og bildet holder seg på samme linje */
-}
-
-.logo {
-    width: 60px; /* Endre størrelsen etter behov */
-    height: 60px; /* Sørg for at høyden er det samme som bredden for å få en sirkel */
-    border-radius: 50%; /* Setter border-radius til 50% for å lage en sirkel */
-    margin-top: 0px; /* Juster marginen etter behov for å passe inn i toppnavigasjonsfeltet */
-}
-
-img {
-    width: 600px;
-}
-
-
-
-.topnav {
-    overflow: hidden;
-    background-color: rgb(255, 81, 0);
-    padding: 0px;
-}
-
-.topnav a,
-.dropdown {
-    float: left;
-    color: rgb(0, 0, 0);
-    text-align: left;
-    padding: 20px;
-    text-decoration: none;
-    font-size: 25px
-}
-
-.topnav a:hover {
-    background-color: rgb(255, 81, 0);
-    color: rgb(255, 255, 255);
-}
-
-.topnav a.active {
-    color: #f1f1f1;
-    margin-top: 10px;
-}
-
-.topnav button.dropbtn {
-    color: #f1f1f1;
-    margin-top: 10px;
-}
-
-.image-container {
-    display: flex;
-}
-
-.image-wrapper {
-    position: relative;
-    margin-right: 10px;
-}
-
-.image-wrapper img {
-    max-width: 565px;
-    height: auto;
-    display: block;
-}
-
-.image-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Justerer bakgrunnsfargen for overlegg */
-    opacity: 0; /* Gjør overlegget usynlig til å begynne med */
-    transition: opacity 0.3s ease;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.overlay-text {
-    color: white;
-    font-size: 16px;
-    text-align: center;
-}
-
-.image-wrapper:hover .image-overlay {
-    opacity: 1; /* Gjør overlegget synlig når musepekeren er over bildet */
-}
-
-
-.funtype {
-    padding-left: 30px;
-    font-size: 30px;
-}
-
-body {
-    font-family: Arial, Helvetica, sans-serif;
-}
-.dropbtn{
-    background-color: rgb(255, 81, 0);
-}
-.dropbtnact {
-    background-color: rgb(255, 81, 0);
-    color: rgb(0, 0, 0);
-    padding: 16px;
-    font-size: 16px;
-    border: rgb(255, 81, 0);
-}
-
-
-.dropdown {
-    float: left;
-    overflow: hidden;
-}
-
-.dropdown a.active {
-    color: rgb(255, 81, 0);
-    border: solid black;
-}
-
-
-
-.dropdown .dropbtn {
-    font-size: inherit;
-    border: none;
-    outline: none;
-    font-family: inherit;
-    margin: 0px;
-}
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: rgb(0, 0, 0);
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    outline: none; /* Legg til denne linjen for å fjerne grensen */
-}
-
-.dropdown-content a {
-    color: rgb(255, 255, 255);
-    background-color: rgb(255, 81, 0);
-    padding: 10px 16px;
-    text-decoration: none;
-    display: block;
-    float: none;
-    text-align: left;
-    border: none; /* Fjern border-egenskapen på lenkene */
-}
-/* For hovering on dropdown content*/
-.dropdown:hover .dropdown-content {
-    display: block;
-    box-shadow: none; /* Fjern box-shadow-egenskapen for hover-tilstand */
-}
-
-.topnav a:hover {
-    background-color: rgb(253, 253, 253);
-    color: rgb(4, 4, 4);
-}
-body {
-    font-family: Arial, Helvetica, sans-serif
-  }
-  
-  .sidebar {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    right: 0;
-    background-color: rgb(255, 81, 0);
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-  }
-  
-  .sidebar a {
-    padding: 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #f5e8e8;
-    display: block;
-  }
-  
-  .sidebar a:hover {
-    color: #000000;
-  }
-  
-  .sidebar .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-  }
-  
-  .openbtn {
-    font-size: 30px;
-    cursor: pointer;
-    background-color:rgb(255, 81, 0);
-    color: rgb(5, 5, 5);
-    border: none;
-    margin-right: 9px;
-    margin: 10px;
-  }
-  .topnav input[type="text"] {
-    float: left;
-    padding: 10px;
-    margin-top: 15px;
-    margin-left: 1030px;
-    border: none;
-    font-size: 16px;
-    width: 200px; /* Juster bredden etter behov */
-}
-
-/* Endre stilen til søkefeltet på hover for bedre brukeropplevelse */
-.topnav input[type="text"]:hover,
-.topnav input[type="text"]:focus {
-    outline: none;
-    background-color: #ffffff;
-}
-
-#searchResult {
-    position: absolute;
-    width: 220px; /* Juster bredden etter behov */
-    right: 84px;
-    top: 70px; /* Juster toppmargin etter behov */
-    background-color: rgb(255, 81, 0);
-    border: 1px solid #ffffff;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  
-}
-
-/* Stiler for søkeresultat-lenker */
-#searchResult a {
-    display: block;
-    padding: 10px;
-    text-decoration: none;
-    color: #e6dfdf;
-    transition: background-color 0.3s;
-}
-
-#searchResult a:hover {
-    background-color: #f9f9f9;
-}
-
-
-
+    background-color: #450262;
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+     height: 120vh;
+     color: rgb#8c19b9; /* Sett teksten til hvit farge for kontrast mot bakgrunnsbildet */
+     font-family: Arial, sans-serif; /* Velg en passende font */
+     margin: 10;  
+ }
+ #navn {
+     position: absolute;
+     top: 20px; /* Avstand fra toppen av vinduet */
+     left: 150px; /* Avstand fra venstre kant av vinduet */
+     font-size: 25px;
+ }
  
+ .farge1 {
+     color: rgb(190, 80, 244) /* Første farge for navnet ditt */
+ }
+ 
+ .farge2 {
+     color: rgb(230, 12, 139); /* Andre farge for navnet ditt */
+ }
+ 
+ .name{
+     display: flex;
+     justify-content: center; /* Plasserer innholdet i midten horisontalt */
+     align-items: flex-start; /* Plasserer innholdet øverst vertikalt */
+     height: 10%; /* Fyller hele høyden av visningen */
+   }
+   .topnav {
+     display: flex;
+   }
+   .topnav a {
+     color: rgb(255, 255, 255);
+     text-align: center;
+     padding: 18px 20px;
+     text-decoration: none;
+     border-bottom: 2px solid transparent; /* Starter med usynlig bunnlinje */
+     transition: border-bottom 0.3s; /* Gjør overgangen glatt */
+   }
+   .topnav a:hover {
+     border-bottom: 2px solid rgb(190, 80, 244); /* Viser bunnlinjen ved sveving */
+   }
   
-
-  
-  
+   .h1{
+     position: absolute;
+     top: 200px; /* Avstand fra toppen av vinduet */
+     left: 225px; /* Avstand fra venstre kant av vinduet */
+     font-size: 40px;
+ }
+ .h2{
+     position: absolute;
+     top: 250px; /* Avstand fra toppen av vinduet */
+     left: 170px; /* Avstand fra venstre kant av vinduet */
+     font-size: 40px;
+ }
+ .farge3 {
+     color: rgb(253, 252, 253) /* Første farge for navnet ditt */
+ }
+ .farge4 {
+     color: rgb(253, 252, 253) /* Første farge for navnet ditt */
+ }
+ .farge5 {
+     color: rgb(230, 12, 139); /* Første farge for navnet ditt */
+ }
+ .farge6 {
+     color: rgb(190, 80, 244); /* Første farge for navnet ditt */
+ }
+ 
+   .animated-text {
+     font-size: 40px;
+     text-align: center;
+     margin-bottom: 20px;
+     position: absolute;
+     top: 340px; /* Avstand fra toppen av vinduet */
+     left: 105px; /* Avstand fra venstre kant av vinduet */
+     font-size: 40px;
+     color: rgb(190, 80, 244);
+ }
+ div.gallery2 {
+   border: 5px solid rgb(230, 12, 139);
+   top: 60px; /* Juster for å sentrere bildet vertikalt */
+   left: 280px;  /* Juster for å sentrere bildet horisontalt */
+ }
+ div.desc {
+   padding: 15px;
+   text-align: center;
+ }
+ .responsive2 {
+   display: flex;
+   justify-content: center;
+ }
+ .gallery2 {
+   width: 630px; /* Sett ønsket bredde */
+   height: 490px; /* Sett ønsket høyde */
+   overflow: hidden;
+   position: relative;
+ }
+ .gallery2 img {
+   width: 100%;
+   height: auto; /* Bevar bildets proporsjoner */
+   position: absolute; /* Gjør at vi kan posisjonere bildet innenfor containeren */
+   top: -353px;px; /* Juster for å sentrere bildet vertikalt */
+   right: 0px; /* Juster for å sentrere bildet horisontalt */
+ }
+ 
+ .sidebar {
+     height: 100%;
+     width: 0;
+     position: fixed;
+     z-index: 1;
+     top: 0;
+     right: 0;
+     background-color: #7d27a2;
+     overflow-x: hidden;
+     transition: 0.5s;
+     padding-top: 60px;
+   }
+   
+   .sidebar a {
+     padding: 8px 32px;
+     text-decoration: none;
+     font-size: 14px;
+     color: #f5e8e8;
+     display: block;
+   }
+   
+   .sidebar a:hover {
+     color: #f5efef;
+   }
+   
+   .sidebar .closebtn {
+     position: absolute;
+     top: 0;
+     right: 25px;
+     font-size: 36px;
+     margin-left: 50px;
+   }
+   
+   .openbtn {
+     font-size: 30px;
+     cursor: pointer;
+     color: rgb(248, 241, 245);
+     background-color: #450262;
+     border: none;
+     margin-right: 9px;
+     margin: 10px;
+   }
+   .img-sidebar{
+     font-size: 10px;
+   }
+ 
+   /* digital klokke */
+   #clock {
+     font-size: 20px;
+     color: rgb(230, 12, 139);
+     position: absolute;
+     top: 24px;
+     right: 50px;
+ }
+ #clock-container {
+   position: absolute;
+   top: 24px;
+   right: 10px;
+   padding: 10px;
+   border: 2px solid rgb(19, 12, 230);
+   background-color: rgba(230, 12, 139, 0.1); /* Bakgrunnsfarge med litt gjennomsiktighet */
+   border-radius: 5px; /* Gjør hjørnene avrundet */
+ }
+ #clock {
+   font-size: 28px;
+   color: rgb(230, 12, 139);
+   font-family:serif;
+ }
+ a {
+     text-decoration: none;
+     color: inherit; /* Behold fargen fra foreldreelementet (h1) */
+ }
+ 
+ #contact-section {
+   background-color: rgb(230, 12, 139); /* Annerledes farge for kontaktseksjonen */
+   padding: 20px; /* Tilpass padding etter behov */
+   color: #fff9f9; /* Tekstfarge for kontrast */
+   margin-top: 400px;
+ }
+ #follow-me {
+   position: absolute;
+   top: 1050px; /* Adjust this value to move the element up or down */
+   right: 130px; /* Adjust this value to move the element left or right */
+   margin: 0;
+   font-size: 20px;
+ }
+ #insta {
+   position: absolute;
+   top: 1130px; /* Adjust this value to move the element up or down */
+   right: 90px; /* Adjust this value to move the element left or right */
+   margin: 0; 
+   font-size: 15px;
+ }
+ #git-hup{
+   position: absolute;
+   top: 1080px; /* Adjust this value to move the element up or down */
+   right: 186px; /* Adjust this value to move the element left or right */
+   margin: 10; 
+   font-size: 15px;
+ }
+ 
+ 
+ 
  

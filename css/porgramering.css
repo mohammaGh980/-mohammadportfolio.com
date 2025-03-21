@@ -1,0 +1,90 @@
+*{
+    color: #fcfafa;o
+  }
+  
+  .container {
+    display: none;
+    grid-template-columns: 50% 50%;
+    padding: 20px;
+  }
+  
+  .info {
+    padding-left: 30px;
+    font-size: 25px;
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 20px;
+    border: 0px solid rgb(224, 224, 224)
+  }
+  .container {
+    display: flex;
+    justify-content: center; /* Plasserer innholdet i midten horisontalt */
+    align-items: flex-start; /* Plasserer innholdet øverst vertikalt */
+    height: 10%; /* Fyller hele høyden av visningen */
+  }
+  
+  .img-sidebar{
+    font-size: 10px;
+  }
+  div.gallery {
+    border: 5px solid rgb(230, 12, 139);
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .responsive5 {
+    padding: 70px;
+    float: left;
+    width: 50%;
+  }
+  
+  .responsive4 {
+    padding: 70px;
+    float: left;
+    width: 50%;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .responsive5 {
+      width: 40.99999%;
+      margin: 8px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .responsive5 {
+      width: 90%;
+    }
+  }
+
+  .head h1 {
+    text-align: center; /* Sentrerer teksten horisontalt */
+    font-size: 36px;    /* Setter størrelsen på teksten */
+    color: rgb(230, 12, 139);   /* Setter fargen på teksten, her er det en oransje nyanse */
+    margin-bottom: -55px;
+    margin-top: 0px;
+  }
+  
